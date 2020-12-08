@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UpdateProfil">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/headerProfil">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/update_user_profil"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/vpi__bright_foreground_inverse_holo_dark"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/headerProfil"
+        android:paddingHorizontal="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerProfil"
+        android:id="@+id/profPicLayout"
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfilView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="5dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profPicLayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/profPicLayout"
+        android:id="@+id/nameLayout">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            app:tint="@color/colorPrimary"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/vpi__background_holo_dark"
+            android:layout_marginHorizontal="15dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateNamaView"
+            android:textSize="18sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:layout_marginHorizontal="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_below="@+id/nameLayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/nameLayout"
+        android:id="@+id/phoneLayout">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone"
+            app:tint="@color/colorPrimary" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/vpi__background_holo_dark"
+            android:layout_marginHorizontal="15dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatePhoneView"
+            android:textSize="18sp"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:layout_marginHorizontal="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_below="@+id/phoneLayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneLayout"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdateProfile"
+            android:text="@string/update_profil"
+            android:textColor="@android:color/background_light"
+            app:icon="@drawable/ic_baseline_update_24"
+            android:layout_marginVertical="2dp"
+            android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+</RelativeLayout>

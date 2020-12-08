@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131047793600",
+    "firebase_url": "https://tubeskelompokd.firebaseio.com",
+    "project_id": "tubeskelompokd",
+    "storage_bucket": "tubeskelompokd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131047793600:android:c6ab51c0dc39322400de25",
+        "android_client_info": {
+          "package_name": "com.example.tubes_kelompok_d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131047793600-j91r7uj9jh8nhvq7rr6aeg0dui80er1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tubes_kelompok_d",
+            "certificate_hash": "65e703485878de862bd912bc3e1d6b51c5b0f66a"
+          }
+        },
+        {
+          "client_id": "131047793600-4cc1n3c0kcp1v2ea30kqsbaiipqqtq33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZdGpI7270vOxKJMYWcG5Moil1Kt4_Fho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131047793600-4cc1n3c0kcp1v2ea30kqsbaiipqqtq33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
